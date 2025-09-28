@@ -1,3 +1,5 @@
+// KrishiVerse-main/src/app/(app)/marketplace/confirmation/page.tsx
+
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -6,8 +8,9 @@ import { Separator } from '@/components/ui/separator';
 import { CheckCircle, Package, ArrowLeft, Calendar, Home } from 'lucide-react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react'; // <-- Imported Suspense
 
+// --- Type Definitions (Remain the same) ---
 type CartItem = {
   id: string;
   name: string;
@@ -34,7 +37,9 @@ type OrderDetails = {
   estimatedDeliveryDate: string;
 };
 
-export default function ConfirmationPage() {
+// --- 1. Client Component to use Dynamic Hook (New structure) ---
+function ConfirmationContent() {
+  // useSearchParams is only called here, inside the client component
   const searchParams = useSearchParams();
   const orderId = searchParams.get('orderId');
   const [orderDetails, setOrderDetails] = useState<OrderDetails | null>(null);
@@ -43,12 +48,36 @@ export default function ConfirmationPage() {
     const storedOrder = sessionStorage.getItem('latestOrder');
     if (storedOrder) {
       const parsedOrder: OrderDetails = JSON.parse(storedOrder);
-      if (parsedOrder.orderId === orderId) {
+      // Check if orderId is available before comparison
+      if (orderId && parsedOrder.orderId === orderId) {
         setOrderDetails(parsedOrder);
       }
     }
   }, [orderId]);
 
+  // Fallback for when order data is loading or missing
+  if (!orderId) {
+    return (
+      <div className="flex items-center justify-center py-12">
+        <Card className="w-full max-w-2xl p-8 text-center">
+          <CardTitle>Order Not Found</CardTitle>
+          <CardDescription className="mt-2">
+             Please check your orders page or ensure you were redirected correctly.
+          </CardDescription>
+          <div className='mt-6 flex justify-center'>
+            <Button asChild>
+              <Link href="/dashboard">
+                <ArrowLeft className="mr-2" />
+                Go to Dashboard
+              </Link>
+            </Button>
+          </div>
+        </Card>
+      </div>
+    );
+  }
+
+  // Actual Confirmation Content
   return (
     <div className="flex items-center justify-center py-12">
       <Card className="w-full max-w-2xl">
@@ -150,4 +179,22 @@ export default function ConfirmationPage() {
       </Card>
     </div>
   );
+}
+
+// --- 2. Export Wrapper Component (Applies Suspense) ---
+export default function ConfirmationPage() {
+    return (
+        <Suspense fallback={
+            <div className="flex items-center justify-center py-12">
+                <Card className="w-full max-w-2xl p-8 text-center">
+                    <CardTitle>Loading Order Details...</CardTitle>
+                    <CardDescription className="mt-2">
+                        Please wait while we confirm your purchase.
+                    </CardDescription>
+                </Card>
+            </div>
+        }>
+            <ConfirmationContent />
+        </Suspense>
+    );
 }

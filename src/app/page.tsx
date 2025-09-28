@@ -1,18 +1,10 @@
-// KrishiVerse-main/src/app/page.tsx
+// KrishiVerse-main/src/app/page.tsx (Final Fixed Root Redirect)
 
-'use client';
+import { redirect } from 'next/navigation';
 
-import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
-
+// Use the server-side redirect function for optimal performance
 export default function Home() {
-  const router = useRouter();
-
-  // Fix: Redirect to the login page to avoid the unnecessary/infinite loop.
-  // If a user is not authenticated, they should start here.
-  useEffect(() => {
-    router.replace('/login');
-  }, [router]);
-
-  return null;
+    // This server component immediately redirects the user to the login page,
+    // which handles authentication or fallback to the public landing page.
+    redirect('/login');
 }
