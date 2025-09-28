@@ -1,5 +1,6 @@
 'use client';
 
+import * as React from 'react';
 import { leaderboardData } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
@@ -33,7 +34,7 @@ export function Testimonials() {
           <p className="mt-4 text-lg text-muted-foreground">
             Hear from farmers who are transforming their livelihoods with
             KrishiVerse.
-          p>
+          </p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
           {testimonials.map((testimonial) => {
