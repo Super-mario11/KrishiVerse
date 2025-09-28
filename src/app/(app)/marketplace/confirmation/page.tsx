@@ -197,4 +197,8 @@ export default function ConfirmationPage() {
             <ConfirmationContent />
         </Suspense>
     );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ca589c8ac0319c168c2399cf18e8af0501aeda6e
