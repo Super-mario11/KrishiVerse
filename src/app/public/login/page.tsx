@@ -1,4 +1,3 @@
-// KrishiVerse-main/src/app/(public)/login/page.tsx
 
 'use client';
 
