@@ -1,0 +1,130 @@
+{
+  "placeholderImages": [
+    {
+      "id": "tomatoes",
+      "description": "Fresh organic tomatoes",
+      "imageUrl": "https://images.unsplash.com/photo-1673533512857-65b33e8dc8b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0b21hdG9lcyUyMHByb2R1Y2V8ZW58MHx8fHwxNzU5MDQwNjY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tomatoes produce"
+    },
+    {
+      "id": "carrots",
+      "description": "Crisp garden carrots",
+      "imageUrl": "https://images.unsplash.com/photo-1636846528194-315c5ad70d4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXJyb3RzJTIwdmVnZXRhYmxlfGVufDB8fHx8MTc1OTAwNDYyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "carrots vegetable"
+    },
+    {
+      "id": "lettuce",
+      "description": "Green leaf lettuce",
+      "imageUrl": "https://images.unsplash.com/photo-1598998255396-9c0289d33304?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsZXR0dWNlJTIwZ3JlZW5zfGVufDB8fHx8MTc1OTA0MDY2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lettuce greens"
+    },
+    {
+      "id": "broccoli",
+      "description": "Organic broccoli heads",
+      "imageUrl": "https://images.unsplash.com/photo-1757332334626-8dadb145540d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicm9jY29saSUyMHZlZ2V0YWJsZXxlbnwwfHx8fDE3NTkwNDA2Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "broccoli vegetable"
+    },
+    {
+      "id": "potatoes",
+      "description": "Sikkim new potatoes",
+      "imageUrl": "https://images.unsplash.com/photo-1688043046229-fe8bc88f8b99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb3RhdG9lcyUyMHZlZ2V0YWJsZXxlbnwwfHx8fDE3NTg5OTI1OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "potatoes vegetable"
+    },
+    {
+      "id": "corn",
+      "description": "Sweet corn on the cob",
+      "imageUrl": "https://images.unsplash.com/photo-1571646302210-db7990b30751?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb3JuJTIwdmVnZXRhYmxlfGVufDB8fHx8MTc1OTA0MDY2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "corn vegetable"
+    },
+    {
+      "id": "apples",
+      "description": "Himalayan Apples",
+      "imageUrl": "https://images.unsplash.com/photo-1730387508083-7b0ffeeda8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhcHBsZXMlMjBmcnVpdHxlbnwwfHx8fDE3NTg5OTI1OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "apples fruit"
+    },
+    {
+      "id": "oranges",
+      "description": "Sikkim Oranges",
+      "imageUrl": "https://images.unsplash.com/photo-1714219722249-aac95c540090?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxvcmFuZ2VzJTIwZnJ1aXR8ZW58MHx8fHwxNzU5MDQzNzk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "oranges fruit"
+    },
+    {
+      "id": "spade",
+      "description": "Hand Spade",
+      "imageUrl": "https://images.unsplash.com/photo-1559059961-dd5b124d1dc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxnYXJkZW4lMjB0b29sfGVufDB8fHx8MTc1OTA0Mzc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "garden tool"
+    },
+    {
+      "id": "rake",
+      "description": "Garden Rake",
+      "imageUrl": "https://images.unsplash.com/photo-1523301551780-cd17359a95d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnYXJkZW4lMjB0b29sfGVufDB8fHx8MTc1OTA0Mzc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "garden tool"
+    },
+    {
+      "id": "compost",
+      "description": "Organic Compost",
+      "imageUrl": "https://images.unsplash.com/photo-1590154743804-cf7c51dcbfd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmZXJ0aWxpemVyJTIwc29pbHxlbnwwfHx8fDE3NTkwNDM3OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fertilizer soil"
+    },
+    {
+      "id": "neem-oil",
+      "description": "Neem Oil Pesticide",
+      "imageUrl": "https://images.unsplash.com/photo-1557505482-fb5252df1d67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwcGVzdGljaWRlfGVufDB8fHx8MTc1OTA0Mzc5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "organic pesticide"
+    },
+    {
+      "id": "field_scan",
+      "description": "A placeholder image for a field scan",
+      "imageUrl": "https://images.unsplash.com/photo-1599138900450-3d06e89ad309?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmYXJtJTIwZmllbGR8ZW58MHx8fHwxNzU4OTQ1MjM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "farm field"
+    },
+    {
+      "id": "chatbot-logo",
+      "description": "The logo for the AI Chatbot",
+      "imageUrl": "https://storage.googleapis.com/aif-us-public-content/app-maker/user_project_11p054z6y0yq8s2y6ztfsvdczg6m/image_1759247653609.png",
+      "imageHint": "chatbot robot"
+    },
+    {
+      "id": "aarav",
+      "description": "Avatar for Aarav Sharma",
+      "imageUrl": "https://images.unsplash.com/photo-1598556149495-d9589a13a522?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBmYXJtZXJ8ZW58MHx8fHwxNzU5MjU2MTE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian farmer"
+    },
+    {
+      "id": "priya",
+      "description": "Avatar for Priya Gurung",
+      "imageUrl": "https://images.unsplash.com/photo-1620392189998-c6899a4c84ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBmYXJtZXIlMjB3b21hbnxlbnwwfHx8fDE3NTkyNTYxMTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian farmer"
+    },
+    {
+      "id": "rohan",
+      "description": "Avatar for Rohan Tamang",
+      "imageUrl": "https://images.unsplash.com/photo-1620403724127-243e8d21b333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBmYXJtZXJ8ZW58MHx8fHwxNzU5MjU2MTE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian farmer"
+    },
+    {
+      "id": "anika",
+      "description": "Avatar for Anika Rai",
+      "imageUrl": "https://images.unsplash.com/photo-1626423026330-c35860714777?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBmYXJtZXIlMjB3b21hbnxlbnwwfHx8fDE3NTkyNTYxMTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian farmer"
+    },
+    {
+      "id": "vikram",
+      "description": "Avatar for Vikram Chettri",
+      "imageUrl": "https://images.unsplash.com/photo-1620403724391-4993d0d55a30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBmYXJtZXJ8ZW58MHx8fHwxNzU5MjU2MTE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian farmer"
+    },
+    {
+      "id": "sunita",
+      "description": "Avatar for Sunita Limbu",
+      "imageUrl": "https://images.unsplash.com/photo-1626423026330-c35860714777?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBmYXJtZXIlMjB3b21hbnxlbnwwfHx8fDE3NTkyNTYxMTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian farmer"
+    },
+    {
+      "id": "rajesh",
+      "description": "Avatar for Rajesh Bhutia",
+      "imageUrl": "https://images.unsplash.com/photo-1620403724391-4993d0d55a30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBmYXJtZXJ8ZW58MHx8fHwxNzU5MjU2MTE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian farmer"
+    }
+  ]
+}
