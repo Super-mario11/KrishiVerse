@@ -1,3 +1,5 @@
+// KrishiVerse-main/src/components/landing/features.tsx (MODIFIED)
+
 'use client';
 
 import { Bot, Gamepad2, ScanLine, Store, Trophy, Leaf } from 'lucide-react';
@@ -7,45 +9,45 @@ import Link from 'next/link';
 const features = [
   {
     title: 'AR Farm Scan',
-    description: 'Scan your fields for pests and diseases with your phone.',
+    description: 'Scan your coconut palms or paddy for early disease detection.',
     icon: ScanLine,
-    color: 'text-blue-500',
-    bgColor: 'bg-blue-50',
+    color: 'text-primary', // New Theme Color
+    bgColor: 'bg-primary/5',
   },
   {
     title: 'AI Chatbot Agronomist',
-    description: 'Get expert advice in multiple languages, 24/7.',
+    description: 'Expert advice for spice and rubber cultivation, 24/7.',
     icon: Bot,
-    color: 'text-purple-500',
-    bgColor: 'bg-purple-50',
+    color: 'text-primary',
+    bgColor: 'bg-primary/5',
   },
   {
     title: 'Sustainable Marketplace',
-    description: 'Buy and sell organic produce at premium prices.',
+    description: 'Buy and sell organic spices and premium coir products.',
     icon: Store,
-    color: 'text-orange-500',
-    bgColor: 'bg-orange-50',
+    color: 'text-secondary', // New Theme Color
+    bgColor: 'bg-secondary/5',
   },
   {
     title: 'Gamified Missions',
-    description: 'Earn rewards and badges for sustainable practices.',
+    description: 'Earn rewards for ethical tapping and organic pest control.',
     icon: Trophy,
-    color: 'text-yellow-500',
-    bgColor: 'bg-yellow-50',
+    color: 'text-secondary',
+    bgColor: 'bg-secondary/5',
   },
   {
     title: 'Farming Simulator',
-    description: 'Learn new techniques in a fun, interactive game.',
+    description: 'Master new techniques for flood-resistant paddy farming.',
     icon: Gamepad2,
-    color: 'text-red-500',
-    bgColor: 'bg-red-50',
+    color: 'text-primary',
+    bgColor: 'bg-primary/5',
   },
   {
     title: 'Crop Recommendations',
-    description: 'AI-powered suggestions for what to plant next.',
+    description: 'AI suggestions for maximizing spice and rubber yields.',
     icon: Leaf,
-    color: 'text-green-500',
-    bgColor: 'bg-green-50',
+    color: 'text-primary',
+    bgColor: 'bg-primary/5',
   },
 ];
 
@@ -55,7 +57,7 @@ export function Features() {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold text-foreground md:text-4xl">
-            A Smarter Way to Farm
+            Embracing the Wisdom of Kerala's Soil
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             KrishiVerse provides you with the tools and insights to improve

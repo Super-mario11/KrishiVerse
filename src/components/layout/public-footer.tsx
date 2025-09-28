@@ -1,14 +1,14 @@
+// KrishiVerse-main/src/components/layout/public-footer.tsx
 
 'use client';
 
-import { Icons } from '@/components/icons'; // <-- MODIFIEDimport { Button } from '@/components/ui/button';
+import { Icons } from '@/components/icons';
+import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Separator } from '@/components/ui/separator';
 import { Facebook, Twitter, Instagram, Linkedin, Leaf } from 'lucide-react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-
 
 export function PublicFooter() {
   const handleScrollToTop = () => {
@@ -27,7 +27,7 @@ export function PublicFooter() {
               <span className="font-headline text-2xl text-primary">KrishiVerse</span>
             </div>
             <p className="text-muted-foreground">
-              Empowering Sikkim’s farmers with AI for a sustainable future.
+              Empowering Kerala’s farmers with AI for a sustainable future. {/* MODIFIED */}
             </p>
             <div className="flex space-x-4">
               <Link href="#" passHref><Button variant="ghost" size="icon"><Facebook /></Button></Link>

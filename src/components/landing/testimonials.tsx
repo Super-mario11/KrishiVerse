@@ -1,27 +1,35 @@
-'use client';
+// KrishiVerse-main/src/components/landing/testimonials.tsx (MODIFIED for Kerala Theme)
 
 import * as React from 'react';
-import { leaderboardData } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import Image from 'next/image';
-import { Card, CardContent } from '../ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { Award, Leaf } from 'lucide-react';
+// Assuming the following components are available for the UI structure
+import { Card, CardContent, CardDescription } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
+import { Quote } from 'lucide-react'; 
 
-const testimonials = [
+// --- Kerala-Themed Testimonials Data ---
+const testimonialsData = [
   {
-    id: 'priya',
-    quote: "KrishiVerse's AI chatbot helped me identify a pest infestation early and saved my entire crop. The organic solutions worked wonders!",
+    name: 'Shaji Mathew',
+    location: 'Cardamom Farmer, Idukki',
+    quote: "The AI recommendations helped me optimize my irrigation schedule during the dry season. My cardamom yield increased by 15%—it’s like having an agronomist on speed dial!",
   },
   {
-    id: 'aarav',
-    quote: 'The marketplace connected me directly with buyers in the city. I got a much better price for my organic vegetables this year.',
+    name: 'Leela Krishnan',
+    location: 'Paddy Grower, Palakkad',
+    quote: "I was skeptical, but the AR Farm Scan accurately identified early blight in my paddy field. We treated it immediately, saving the majority of the harvest. A true blessing!",
   },
   {
-    id: 'rohan',
-    quote: 'The gamified missions are a fun way to learn about sustainability. My village is now competing to be the greenest!',
+    name: 'Fathima Beevi',
+    location: 'Coconut Grower, Malappuram',
+    quote: "Selling my organic coconuts through the Sustainable Marketplace gave me a much better price than the local mandi. KrishiVerse connects us directly to appreciative buyers.",
+  },
+  {
+    name: 'Anoop Nair',
+    location: 'Rubber Tapper, Kottayam',
+    quote: "The Gamified Missions taught me the best ethical tapping practices. I earned a badge and saw my tree health improve. Technology preserving tradition!",
   },
 ];
+// ------------------------------------
 
 export function Testimonials() {
   return (
@@ -29,46 +37,33 @@ export function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold text-foreground md:text-4xl">
-            From the Heart of Sikkim
+            Voices from Haritha Keralam
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Hear from farmers who are transforming their livelihoods with
-            KrishiVerse.
+            Hear from our community about how KrishiVerse is transforming their farms and livelihoods.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-          {testimonials.map((testimonial) => {
-            const farmer = leaderboardData.find((f) => f.id === testimonial.id);
-            const avatar = PlaceHolderImages.find((p) => p.id === farmer?.id);
-            if (!farmer || !avatar) return null;
 
-            return (
-              <Card key={farmer.id}>
-                <CardContent className="p-6">
-                  <p className="italic text-muted-foreground">
-                    &ldquo;{testimonial.quote}&rdquo;
-                  </p>
-                  <div className="mt-4 flex items-center gap-4">
-                    <Avatar>
-                      <AvatarImage src={avatar.imageUrl} alt={farmer.name} />
-                      <AvatarFallback>{farmer.name.charAt(0)}</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <p className="font-semibold text-foreground">
-                        {farmer.name}
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        {farmer.village}
-                      </p>
-                    </div>
-                    {farmer.badge && (
-                      <farmer.badge className="ml-auto h-6 w-6 text-yellow-500" />
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
+        {/* Testimonials Grid using mapped data */}
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          {testimonialsData.map((testimonial) => (
+            <Card key={testimonial.name} className="flex flex-col p-6 shadow-lg transition-shadow hover:shadow-xl">
+              <CardContent className="flex-grow p-0">
+                {/* Use the new Primary/Accent colors defined in tailwind.config.ts */}
+                <Quote className="h-6 w-6 text-primary" /> 
+                <p className="mt-4 text-base italic text-gray-700">
+                  "{testimonial.quote}"
+                </p>
+              </CardContent>
+              <Separator className="my-4" />
+              <div className="flex items-center">
+                <div className="ml-0">
+                  <p className="font-semibold text-foreground">{testimonial.name}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                </div>
+              </div>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

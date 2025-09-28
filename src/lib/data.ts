@@ -127,10 +127,10 @@ export const marketplaceProduce: Produce[] = [
   { id: 'carrots', name: 'Garden Carrots', price: 'Rs 80/kg', category: 'vegetable', unit: 'kg', priceValue: 80 },
   { id: 'lettuce', name: 'Green Leaf Lettuce', price: 'Rs 150/kg', category: 'vegetable', unit: 'kg', priceValue: 150 },
   { id: 'broccoli', name: 'Fresh Broccoli', price: 'Rs 180/kg', category: 'vegetable', unit: 'kg', priceValue: 180 },
-  { id: 'potatoes', name: 'Sikkim Potatoes', price: 'Rs 60/kg', category: 'vegetable', unit: 'kg', priceValue: 60 },
+  { id: 'potatoes', name: 'Potatoes', price: 'Rs 60/kg', category: 'vegetable', unit: 'kg', priceValue: 60 },
   { id: 'corn', name: 'Sweet Corn', price: 'Rs 90/kg', category: 'vegetable', unit: 'kg', priceValue: 90 },
   { id: 'apples', name: 'Himalayan Apples', price: 'Rs 200/kg', category: 'fruit', unit: 'kg', priceValue: 200 },
-  { id: 'oranges', name: 'Sikkim Oranges', price: 'Rs 100/kg', category: 'fruit', unit: 'kg', priceValue: 100 },
+  { id: 'oranges', name: 'Oranges', price: 'Rs 100/kg', category: 'fruit', unit: 'kg', priceValue: 100 },
   { id: 'spade', name: 'Hand Spade', price: 'Rs 350/piece', category: 'tool', unit: 'piece', priceValue: 350 },
   { id: 'rake', name: 'Garden Rake', price: 'Rs 500/piece', category: 'tool', unit: 'piece', priceValue: 500 },
   { id: 'compost', name: 'Organic Compost', price: 'Rs 250/bag', category: 'fertilizer', unit: 'bag', priceValue: 250 },
@@ -174,7 +174,7 @@ export const mockOrders: Order[] = [
   {
     id: 'KV-169869123',
     date: 'Oct 30, 2023',
-    items: [{ name: 'Sikkim Oranges', quantity: 5 }],
+    items: [{ name: 'Oranges', quantity: 5 }],
     total: 550.0,
     status: 'Shipped',
     trackingHistory: [
@@ -202,7 +202,7 @@ export const mockOrders: Order[] = [
   {
     id: 'KV-169841890',
     date: 'Oct 27, 2023',
-    items: [{ name: 'Sikkim Potatoes', quantity: 10 }],
+    items: [{ name: 'Potatoes', quantity: 10 }],
     total: 650.0,
     status: 'Cancelled',
     trackingHistory: [

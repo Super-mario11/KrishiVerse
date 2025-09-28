@@ -1,3 +1,5 @@
+// KrishiVerse-main/src/components/landing/hero.tsx (MODIFIED)
+
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -9,20 +11,27 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const heroImages = [
-  PlaceHolderImages.find((p) => p.id === 'field_scan')!,
+  // New Kerala-themed images (Check your next.config.ts to allow these URLs)
   {
-    id: 'sikkim-farm',
-    description: 'Sikkim terraced farms',
-    imageUrl: 'https://images.unsplash.com/photo-1598230752589-32d3b0542387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzaWNraW0lMjBmYXJtfGVufDB8fHx8MTc1OTM5MTQ1OXww&ixlib=rb-4.1.0&q=80&w=1080',
-    imageHint: 'Sikkim farm',
+    id: 'kerala-backwaters',
+    description: 'Kerala backwaters and coconut trees',
+    imageUrl: 'https://plus.unsplash.com/premium_photo-1661854008793-8ce54b2e622b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VyYWwlMjBmYXJtaW5nfGVufDB8fDB8fHww',
+    imageHint: 'Backwaters, Kerala',
   },
   {
-    id: 'organic-crops',
-    description: 'Organic crops growing',
-    imageUrl: 'https://images.unsplash.com/photo-1597992921303-348e8a6a683e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxvcmdhbmljJTIwY3JvcHN8ZW58MHx8fHwxNzU5MzkxNDU5fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    imageHint: 'organic crops',
+    id: 'paddy-field',
+    description: 'Lush green paddy fields in Kerala',
+    imageUrl: 'https://images.unsplash.com/photo-1704452419411-cf0479b9badc?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGtlcmFsJTIwZmFybWluZ3xlbnwwfHwwfHx8MA%3D%3D',
+    imageHint: 'Paddy field, Kerala',
+  },
+  {
+    id: 'spices-farm',
+    description: 'Kerala spice plantation',
+    imageUrl: 'https://plus.unsplash.com/premium_photo-1675866446878-fb80455b12ce?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8a2VyYWwlMjBmYXJtaW5nfGVufDB8fDB8fHww',
+    imageHint: 'Spice farm, Kerala',
   },
 ];
+// NOTE: Replaced original heroImages array.
 
 export function Hero() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -57,14 +66,14 @@ export function Hero() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
         <div className="container mx-auto">
-          <h1 className="font-headline text-4xl font-bold drop-shadow-md sm:text-5xl md:text-6xl lg:text-7xl">
-            Grow Smart. Grow Green. 🌱
+          {/* Updated Headline and Subtitle */}
+          <h1 className="font-headline text-5xl font-extrabold drop-shadow-lg sm:text-6xl md:text-7xl lg:text-8xl">
+            Haritha Keralam: Grow with Wisdom.
           </h1>
-          <p className="mt-4 max-w-3xl mx-auto text-lg text-white/90 drop-shadow-sm md:text-xl">
-            Sikkim’s AI-powered platform for sustainable farming and organic
-            produce.
+          <p className="mt-6 max-w-4xl mx-auto text-xl text-white/90 drop-shadow-sm md:text-2xl">
+            Kerala's AI-powered platform for spice, coconut, and paddy cultivation—connecting tradition with technology.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Button size="lg" asChild className="group">
               <Link href="/signup">
                 Get Started
